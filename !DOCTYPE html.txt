@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOKMart</title>
+
+  <!-- Google Font for Calligraphy Styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Color Palette & Basic Setup */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #FAF6F0;
+      color: #4A3B32;
+    }
+
+    /* Calligraphy Header */
+    header {
+      background-color: #D2B48C;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1.logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 50px;
+      margin: 0;
+      color: #3D2B1F;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #3D2B1F;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    /* Product Section */
+    .products {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E6D2C1;
+      border-radius: 8px;
+      padding: 15px;
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    button.add-to-cart {
+      background-color: #D2B48C;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button.add-to-cart:hover {
+      background-color: #B59469;
+    }
+
+    /* Calligraphy Section Titles */
+    h2.section-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      border-bottom: 2px solid #D2B48C;
+      display: inline-block;
+      margin-top: 30px;
+    }
+
+    /* FAQ Section */
+    .faq-item {
+      background-color: #FFFFFF;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #E6D2C1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">BOOKMart</h1>
+    <p>Your Favorite Place for Books & Stationery</p>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <!-- Products Section -->
+    <h2 class="section-title" id="products">Our Items</h2>
+    <div class="products">
+      
+      <div class="product-card">
+        <h3>Classic Novel</h3>
+        <p>Price: $12.00</p>
+        <button class="add-to-cart" onclick="alert('Added Novel to cart!')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <h3>A5 Notebook</h3>
+        <p>Price: $6.00</p>
+        <button class="add-to-cart" onclick="alert('Added Notebook to cart!')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <h3>Pen Set</h3>
+        <p>Price: $4.00</p>
+        <button class="add-to-cart" onclick="alert('Added Pen Set to cart!')">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <!-- FAQs Section -->
+    <h2 class="section-title" id="faqs">Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+      <strong>Q: How long does shipping take?</strong>
+      <p>A: Shipping usually takes 3 to 5 business days.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: What payment methods do you accept?</strong>
+      <p>A: We accept all major cards and online payment options.</p>
+    </div>
+
+    <!-- Contact Info Section -->
+    <h2 class="section-title" id="contact">Contact Us</h2>
+    <p>Have questions? Reach out to us anytime!</p>
+    <ul>
+      <li><strong>Email:</strong> support@bookmart.com</li>
+      <li><strong>Phone:</strong> (123) 456-7890</li>
+      <li><strong>Address:</strong> 123 Reading Lane, Booktown</li>
+    </ul>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 BOOKMart. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
